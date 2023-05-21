@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Home page</title>
-</head>
-<body>
-    <h1>This is home page</h1>
-    <h2>list1</h2>
-   {% for i in list1 %}
-    <p>{{ i }}</p>
-     {% endfor %}}
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Home Page</h1>
+<p>Welcome to the home page.</p>
+{% endblock %}

@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>user</title>
-</head>
-<body>
-    <h1>This is a user page</h1>
-    <h2>Welcome {{ firstname }}, your age is {{ age }}</h2>
-    {% for i in range(1,age) %}
-         {% if age % i == 0 %}}
-             <p> {{ i }}</p>
-         {% endif %}
-    {% endfor %}
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %} User {% endblock %}
+{% block content %}
+    <h3>hello, {{ user }} </h3>
+{% endblock %}
